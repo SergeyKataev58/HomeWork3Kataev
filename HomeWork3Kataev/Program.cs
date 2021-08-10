@@ -42,15 +42,30 @@ namespace HomeWork3Kataev //Задание 1 комплексные числа
     {
         static void Main(string[] args)
         {
+
+            Console.Write("Выбирете операцию Вычитание(1) или Умножение(2): ");
+
+
             Complex z1 = new Complex(re: 1, im: 2);
-            Console.WriteLine($"Комплексное число 1 =" + z1);
+            
             Complex z2 = new Complex(re: 4, im: 5);
-            Console.WriteLine($"Комплексное число 2 =" + z2);
+            
 
             Complex z3 = Complex.Otr(z1, z2);
             Complex z4 = Complex.Proiz(z1, z2);
-            Console.WriteLine($"Разность комплексных чисел 1 и 2 =" + z3);
-            Console.WriteLine($"Произведение комплексных чисел 1 и 2 =" + z4);
+
+            var p = int.Parse(Console.ReadLine());
+            switch (p)
+            {
+                case 1:
+                    Console.WriteLine($"Комплексное число 1 =" + z1);
+                    Console.WriteLine($"Комплексное число 2 =" + z2);
+                    Console.WriteLine($"Разность комплексных чисел 1 и 2 =" + z3); break;
+                case 2:
+                    Console.WriteLine($"Комплексное число 1 =" + z1);
+                    Console.WriteLine($"Комплексное число 2 =" + z2); 
+                    Console.WriteLine($"Произведение комплексных чисел 1 и 2 =" + z4); break;            }
         }
+
     }
 }
