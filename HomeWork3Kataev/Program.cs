@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace HomeWork3Kataev
+namespace HomeWork3Kataev //Задание 1 комплексные числа
 {
     class Complex
     {
